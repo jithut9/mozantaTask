@@ -14,7 +14,7 @@ public class Smodel {
 	private String dob;
 	private String division;
 	private String email;
-	private String phone;
+	private String genter;
 	
 	public String getId() {
 		return id;
@@ -58,11 +58,12 @@ public class Smodel {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPhone() {
-		return phone;
+
+	public String getGenter() {
+		return genter;
 	}
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setGenter(String genter) {
+		this.genter = genter;
 	}
 	
 	

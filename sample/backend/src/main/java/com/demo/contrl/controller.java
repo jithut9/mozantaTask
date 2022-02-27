@@ -24,7 +24,7 @@ public class controller {
 	@PostMapping("/add")
 	public List<Smodel> add(@RequestBody Smodel data) {
 		repository.insert(data);
-		return repository.findAll();	
+		return repository.findAll();
 	}
 	
 	@GetMapping("/del/{data}")

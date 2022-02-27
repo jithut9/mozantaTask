@@ -1,11 +1,13 @@
 import React from "react";
 import axios from "axios";
+import "./App.css";
 import { useState, useEffect } from "react";
 
 export default function Table() {
   const [student, setStudent] = useState([]);
   useEffect(() => {
     const req = axios.get("http://localhost:8000/list").then((data) => {
+  
       setStudent(data.data);
     });
   }, []);
@@ -19,26 +21,27 @@ export default function Table() {
   console.log(student);
   return (
     <div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Class</th>
-            <th scope="col">Division</th>
-            <th scope="col">Phone</th>
+      <table className="table" class="table">
+        <thead className="table">
+          <tr className="table">
+            <th className="table" scope="col">Name</th>
+            <th className="table" scope="col">Class</th>
+            <th className="table" scope="col">Division</th>
+            <th className="table" >Gender</th>
+            <th className="table">Remove</th>
           </tr>
         </thead>
         <tbody>
           {student.map((data) => {
             return (
               <tr key = {data.id}>
-                <th scope="row">{data.name}</th>
-                <td>{data.clas}</td>
-                <td>{data.division}</td>
-                <td>{data.phone}</td>
-                <td>
+                <th className="table" scope="row">{data.name}</th>
+                <td className="table">{data.clas}</td>
+                <td className="table">{data.division}</td>
+                <td className="table">{data.genter}</td>
+                <td className="table">
                   <button className="btn btn-outline-danger btn-sm" onClick={()=>detele(data.id)}>
-                    <img src="https://img.icons8.com/material-outlined/18/000000/delete-trash.png" />
+                    <img className="img" src="https://icon2.cleanpng.com/20180314/ahe/kisspng-button-delete-key-icon-warning-icons-5aa8e9e09b7cc3.2774194015210193606369.jpg" />
                   </button>
                 </td>
               </tr>
