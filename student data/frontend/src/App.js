@@ -5,7 +5,8 @@ import Table from "./table";
 
 function App() {
   return (
-    <div className="container">
+    
+    <div className="cont">
       <h2 className="h">SCHOOL REGISTER</h2>
       <div className="row">
         <div className="col-6">

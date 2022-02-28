@@ -38,6 +38,7 @@ export default function Form() {
             <td>Class :</td>
             <td>
               <select id="class">
+              <option >select</option>
                 <option value="1">I</option>
                 <option value="2">II</option>
                 <option value="3">III</option>
@@ -55,6 +56,7 @@ export default function Form() {
             <td>Division :</td>
             <td>
               <select id="division">
+              <option >select</option>
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
