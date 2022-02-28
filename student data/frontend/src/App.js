@@ -15,7 +15,7 @@ function App() {
           <Form />
         </div>
         <div className="col-6">
-        <h2>Student Dtails</h2>
+        <h2>Student Details</h2>
           <br />
           <br />
           <Table />
